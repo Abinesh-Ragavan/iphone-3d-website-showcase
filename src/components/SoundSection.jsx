@@ -10,7 +10,9 @@ function SoundSection() {
             behavior: "smooth"
         })
     }
-
+    const handleBuyButtonClick = () => {
+        window.open("https://www.apple.com/in/store", "_blank")
+    };
 
 
 
@@ -26,7 +28,7 @@ function SoundSection() {
                     </span>
                     <ul className="links">
                         <li>
-                            <button className="button">Buy</button>
+                            <button className="button" onClick={handleBuyButtonClick}>Buy</button>
                         </li>
                         <li>
                             <a className="link" onClick={handleLearnMore} >Learn More</a>

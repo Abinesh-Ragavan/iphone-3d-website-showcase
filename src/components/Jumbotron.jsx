@@ -12,6 +12,9 @@ function Jumbotron() {
 
         })
     }
+    const handleBuyButtonClick = () => {
+        window.open("https://www.apple.com/in/store", "_blank")
+    };
     return (
         <div className="jumbotron-section wrapper">
             <h2 className="title">New</h2>
@@ -22,7 +25,8 @@ function Jumbotron() {
             </span>
             <ul className="links">
                 <li>
-                    <button className="button">Buy</button>
+                    <button className="button" onClick={handleBuyButtonClick}>Buy</button>
+
                 </li>
                 <li >
                     <a className="link" onClick={handleLearnMore} >Learn more</a>
